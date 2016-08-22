@@ -93,7 +93,7 @@ def patched_ZopeFind(self, obj, obj_ids=None, obj_metatypes=None,
         if search_sub and (hasattr(bs, 'objectItems')):
             subob = ob
             sub_p = p
-            patched_ZopeFind(subob, obj_ids, obj_metatypes,
+            patched_ZopeFind(self, subob, obj_ids, obj_metatypes,
                                obj_searchterm, obj_expr,
                                obj_mtime, obj_mspec,
                                obj_permission, obj_roles,
